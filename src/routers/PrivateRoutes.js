@@ -11,8 +11,6 @@ export const PrivateRoutes = ({
     let lastPathVisited = rest.location.pathname;
     const queryString = rest.location.search;
 
-    console.log(rest)
-
     lastPathVisited = ( queryString.length > 3 ) ? lastPathVisited + queryString : lastPathVisited;
 
     localStorage.setItem( 'lastPath', lastPathVisited );
